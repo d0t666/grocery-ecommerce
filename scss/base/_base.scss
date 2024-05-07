@@ -3,11 +3,7 @@
 ::after {
     box-sizing: border-box;
 }
-:root {
-    --text-color: #1a162e;
-    --icon-color: brightness(0) saturate(100%) invert(11%) sepia(36%)
-        saturate(670%) hue-rotate(210deg) brightness(97%) contrast(105%);
-}
+
 
 html {
     font-size: 62.5%;
