@@ -99,16 +99,16 @@
                 <div class="home__row">
                     <h2 class="home__heading">Total LavAzza 1320</h2>
                     <div class="filter-wrap">
-                        <button class="filter-btn">
+                        <button class="filter-btn js-toggle" toggle-target="#home-filter">
                             Filter
                             <img src="./assets/icon/filter.svg" alt="" class="filter-btn__icon icon" />
                         </button>
 
-                        <div class="filter">
+                        <div id="home-filter" class="filter hide">
                             <img src="./assets/icon/arrow-up.png" alt="" class="filter__arrow" />
                             <h3 class="filter__heading">Filter</h3>
                             <form action="" class="filter__form">
-                                <div class="filter__row">
+                                <div class="filter__row filter__content">
                                     <!-- filter column 1 -->
                                     <div class="filter__col">
                                         <label for="" class="filter__form-label">Price</label>
@@ -159,7 +159,7 @@
                                                     500g<img
                                                         src="./assets/icon/select-arrow.svg"
                                                         alt=""
-                                                        class="filter__form-select-arrow"
+                                                        class="filter__form-select-arrow icon"
                                                     />
                                                 </div>
 
@@ -167,7 +167,7 @@
                                                     Gram<img
                                                         src="./assets/icon/select-arrow.svg"
                                                         alt=""
-                                                        class="filter__form-select-arrow"
+                                                        class="filter__form-select-arrow icon"
                                                     />
                                                 </div>
                                             </div>
@@ -197,7 +197,7 @@
                                                 <img
                                                     src="./assets/icon/search.svg"
                                                     alt=""
-                                                    class="filter__form-input-icon"
+                                                    class="filter__form-input-icon icon"
                                                 />
                                             </div>
                                         </div>
