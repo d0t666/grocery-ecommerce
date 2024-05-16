@@ -209,11 +209,46 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- filter column 3 -->
+                                    <div class="filter__col">
+                                        <label for="" class="filter__form-label">Brand</label>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-text-input">
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    placeholder="Search brand name"
+                                                    class="filter__form-input"
+                                                />
+                                                <img
+                                                    src="./assets/icon/search.svg"
+                                                    alt=""
+                                                    class="filter__form-input-icon icon"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-tags">
+                                                <button class="filter__form-tag">Lavazza</button>
+                                                <button class="filter__form-tag">Nescafe</button>
+                                                <button class="filter__form-tag">Starbucks</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <!-- button -->
                                 </div>
                                 <div class="filter__row filter__footer">
-                                    <button class="btn btn--text filter__cancel">Cancel</button>
-                                    <button class="btn btn--primary filter__submit">Show Result</button>
+                                    <button class="btn btn--text filter__cancel js-toggle" toggle-target="#home-filter">
+                                        Cancel
+                                    </button>
+                                    <button
+                                        class="btn btn--primary filter__submit js-toggle"
+                                        toggle-target="#home-filter"
+                                    >
+                                        Show Result
+                                    </button>
                                 </div>
                             </form>
                         </div>
