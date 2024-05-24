@@ -3,6 +3,9 @@
 .auth {
     min-height: 100vh;
     display: flex;
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
 
     &__intro,
     &__content {
@@ -26,6 +29,9 @@
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 144.444%; /*  */
+            @include abstracts.screen(md) {
+                font-size: 1.5rem;
+            }
         }
         &-logo,
         &-next {
@@ -70,6 +76,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 146.667%;
+        @include abstracts.screen(md) {
+            font-size: 2.2rem;
+        }
     }
     &__desc {
         margin-top: 10px;
@@ -79,10 +88,16 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
     &__form {
         width: 100%;
         margin-top: 30px;
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
     }
     &__link {
         color: #0071dc;
@@ -90,6 +105,9 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
     &__btn-group {
         display: flex;
@@ -106,5 +124,11 @@
         font-size: 1.8rem;
         line-height: 144.444%;
         color: #9e9da8;
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
+        &-link {
+            font-size: inherit;
+        }
     }
 }
