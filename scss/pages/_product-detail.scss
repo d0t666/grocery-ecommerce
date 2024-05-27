@@ -4,14 +4,21 @@
     display: flex;
     flex-direction: column;
     min-height: 80vh;
+    padding-bottom: 50px;
     background: var(--product-detail-bg);
 }
 .product-container {
     margin-top: 30px;
 }
-
+.prod-info-content {
+    border-radius: 20px;
+    background: #fff;
+}
 .prod-preview {
     padding: 0 30px;
+    @include abstracts.screen(md) {
+        padding: 16px;
+    }
 
     @include abstracts.screen(lg) {
         display: flex;
@@ -75,18 +82,27 @@
 }
 .prod-info {
     padding: 60px;
-    background: #f6f6f6;
+    background: var(--product-detail-info-bg);
     @include abstracts.screen(xxl) {
         padding: 40px;
     }
     @include abstracts.screen(lg) {
         margin-top: 30px;
     }
+    @include abstracts.screen(md) {
+        border-radius: 20px;
+        padding: 0 16px 16px;
+        margin-top: 0;
+    }
 
     &__heading {
         font-size: 2.6rem;
         font-weight: 500;
         line-height: 138.462%;
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
     }
     &__label {
         margin-top: 30px;
@@ -142,11 +158,18 @@
     @include abstracts.screen(xxl) {
         padding-left: 10px;
     }
+    @include abstracts.screen(lg) {
+        padding-left: 0;
+    }
 }
 .prod-prop {
     display: flex;
     gap: 16px;
     margin-top: 30px;
+
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
 
     &__icon {
         align-self: start;
