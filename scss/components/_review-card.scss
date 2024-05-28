@@ -27,11 +27,11 @@
         display: flex;
         align-items: center;
         gap: 8px;
-    }
-    &__rating-title {
-        margin-left: 12px;
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 144.444%;
+        &-title {
+            margin-left: 12px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
     }
 }
