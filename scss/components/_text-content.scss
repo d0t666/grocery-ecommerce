@@ -57,13 +57,13 @@
         text-align: center;
     }
     a {
-        color: #ffb700;
+        color: #0071dc;
         text-decoration: underline;
     }
     blockquote {
-        background-color: rgb(255, 183, 0, 0.2);
+        background-color: rgba($color: #77daa6, $alpha: 0.1);
         padding: 20px;
-        border-left: 3px solid #ffb700;
+        border-left: 3px solid #77dae6;
         p {
             margin: 0;
         }
@@ -72,6 +72,6 @@
         border: none;
         height: 1.5px;
         margin: 40px 0;
-        background: #ebebeb;
+        background: var(--text-content-hr-bg);
     }
 }
