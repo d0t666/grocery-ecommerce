@@ -44,8 +44,16 @@ select {
     outline: none;
     border: none;
 }
-input {
+input,
+textarea {
     background: transparent;
+}
+input:-webit-autofill,
+input:-webit-autofill:focus,
+input:-webit-autofill:active,
+input:-webit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: #fff !important;
 }
 .icon {
     filter: var(--icon-color);

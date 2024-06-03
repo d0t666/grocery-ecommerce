@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -422,11 +422,11 @@
             <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
         </div>
         <!-- Modal: add new shopping address -->
-        <div id="add-new-address" class="modal hide" style="--content-width: 650px">
+        <div id="add-new-address" class="modal show" style="--content-width: 650px">
             <div class="modal__content">
                 <h2 class="modal__heading">Add new shipping address</h2>
                 <div class="modal__body">
-                    <form action="" class="form">
+                    <form action="" class="form" autocomplete="off">
                         <div class="form__row">
                             <div class="form__group">
                                 <label for="name" class="form__label form__label--small">Name</label>
@@ -454,11 +454,11 @@
                                         placeholder="Phone"
                                         class="form__input"
                                         required
-                                        minlength="11"
+                                        minlength="10"
                                     />
                                     <img src="./assets/icon/form_error.svg" alt="" class="form__input--icon-error" />
                                 </div>
-                                <p class="form__error">Phone must be at least 11 characters</p>
+                                <p class="form__error">Phone must be at least 10 characters</p>
                             </div>
                         </div>
                         <div class="form__group">
