@@ -52,7 +52,12 @@
 
     background: #f8f8fb;
     font-weight: 500;
+    white-space: nowrap;
     user-select: none;
+    &--small {
+        height: 40px;
+        padding: 0 16px;
+    }
     &:hover {
         opacity: 0.9;
     }
@@ -63,7 +68,6 @@
     }
     &--text {
         background: transparent;
-        color: #9e9da8;
         font-weight: 400;
     }
     &--primary {
