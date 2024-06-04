@@ -80,6 +80,10 @@
     &--rounded {
         border-radius: 99px;
     }
+    &--danger {
+        color: #fff;
+        background: var(--button-danger-color, #ed4337);
+    }
     &[disabled],
     &--disabled {
         opacity: 0.5;
