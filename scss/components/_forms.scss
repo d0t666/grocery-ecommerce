@@ -133,14 +133,14 @@ $error-color: #ed4337;
         font-size: 1.8rem;
         font-weight: 600;
         text-align: center;
-        padding: 14px;
+        padding: 20px;
     }
     &__close-dialog {
         font-size: 4rem;
         position: absolute;
         right: 0;
         top: 0;
-        padding: 2px 18px;
+        padding: 12px 18px;
         opacity: 0.8;
     }
     &__search {
@@ -160,7 +160,10 @@ $error-color: #ed4337;
             margin-left: 10px;
         }
         @include abstracts.screen(lg) {
-            height: 42px;
+            height: 48px;
+            &-icon {
+                width: 18px;
+            }
         }
         @include abstracts.screen(sm) {
             padding: 0 14px;
@@ -174,6 +177,9 @@ $error-color: #ed4337;
         margin-top: 10px;
         overflow-y: auto;
         overscroll-behavior: contain;
+        @supports (-webkit-touch-callout: none) {
+            padding-bottom: 300px;
+        }
     }
     &__option {
         font-size: 1.4rem;
@@ -188,7 +194,8 @@ $error-color: #ed4337;
             cursor: pointer;
         }
         @include abstracts.screen(lg) {
-            padding: 14px 20px;
+            padding: 18px 30px;
+            font-size: 1.6rem;
         }
     }
     &__error {
