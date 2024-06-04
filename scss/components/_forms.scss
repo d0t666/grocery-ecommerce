@@ -96,15 +96,17 @@ $error-color: #ed4337;
         }
     }
     &__select-dialog {
+        z-index: 1;
         position: absolute;
-        background: #fff;
-        padding: 10px 0;
+        background: var(--form-seclect-dialog-bg);
+        padding-bottom: 10px;
         border: 1px solid #d2d1d6;
         border-radius: 10px;
         bottom: 44px;
         left: 10px;
         min-width: 230px;
         max-height: 310px;
+        box-shadow: 0 0 5px var(--form-seclect-dialog-shadow);
 
         display: flex;
         flex-direction: column;
@@ -119,34 +121,72 @@ $error-color: #ed4337;
             visibility: visible;
             translate: 0;
         }
+        @include abstracts.screen(sm) {
+            position: fixed;
+            max-width: initial;
+            max-height: initial;
+            inset: 0;
+            border-radius: 0;
+        }
+    }
+    &__close-dialog {
+        font-size: 4rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 2px 18px;
+        opacity: 0.8;
     }
     &__search {
         display: flex;
+        flex-shrink: 0;
         align-items: center;
         border-bottom: 1px solid #d2d1d6;
-        padding: 0 20px 10px;
+        height: 38px;
+        padding: 0 20px;
         &-input {
             flex: 1;
+            height: 100%;
+            font-size: 1.6rem;
         }
         &-icon {
             width: 16px;
+            margin-left: 10px;
+        }
+        @include abstracts.screen(lg) {
+            height: 42px;
+        }
+        @include abstracts.screen(sm) {
+            flex-direction: row-reverse;
+            margin-top: 30px;
+            &-icon {
+                margin-left: 0;
+            }
+            &-input {
+                padding-left: 8px;
+            }
         }
     }
     &__options-list {
         flex: 1;
         margin-top: 10px;
         overflow-y: auto;
+        overscroll-behavior: contain;
     }
     &__option {
         font-size: 1.4rem;
         padding: 8px 20px;
+
         &--current {
-            background: rgba($color: #ffb700, $alpha: 0.5);
+            background: rgba($color: #ffb700, $alpha: 0.6);
             font-weight: 500;
         }
         &:not(&--current):hover {
-            background: #ebebeb;
+            background: var(--form-option-hover-bg);
             cursor: pointer;
+        }
+        @include abstracts.screen(lg) {
+            padding: 14px 20px;
         }
     }
     &__error {

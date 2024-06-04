@@ -56,6 +56,9 @@ html.dark {
 
     // form
     --form-placeholder-color: #b9babe;
+    --form-seclect-dialog-shadow: ($color: #fff, $alpha: 0.15);
+    --form-seclect-dialog-bg: #2f3441;
+    --form-option-hover-bg: #292e39;
 
     // product detail
     --product-detail-bg: #292e39;
