@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,21 +41,21 @@
                 <!-- Breadcrumbs -->
                 <div class="checkout-container">
                     <ul class="breadcrumbs checkout-page__breadcrumbs">
-                        <li>
+                        <li class="form__option">
                             <a href="#!" class="breadcrumbs__link"
                                 >Home
                                 <img src="./assets/icon/arrow-right.svg" alt="" />
                             </a>
                         </li>
-                        <li>
+                        <li class="form__option">
                             <a href="./checkout.html" class="breadcrumbs__link"
                                 >Checkout
                                 <img src="./assets/icon/arrow-right.svg" alt="" />
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Shipping </a>
+                        <li class="form__option">
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link">Shipping </a>
                         </li>
                     </ul>
                 </div>
@@ -483,9 +483,38 @@
                                     name=""
                                     placeholder="City/District/Town"
                                     id="city"
-                                    class="form__input"
+                                    class="form__input js-toggle"
+                                    toggle-target="#city-dialog"
                                 />
                                 <img src="./assets/icon/form_error.svg" alt="" class="form__input--icon-error" />
+                                <div id="city-dialog" class="form__select-dialog hide">
+                                    <div class="form__search">
+                                        <input placeholder="Search" type="text" class="form__search-input" />
+                                        <img src="./assets/icon/search.svg" alt="" class="form__search-icon" />
+                                    </div>
+                                    <ul class="form__options-list">
+                                        <li class="form__option">Ha Noi</li>
+                                        <li class="form__option form__option--current">TP Ho Chi Minh</li>
+                                        <li class="form__option">Da Nang</li>
+                                        <li class="form__option">Hai Phong</li>
+                                        <li class="form__option">Can Tho</li>
+                                        <li class="form__option">Nha Trang</li>
+                                        <li class="form__option">Hue</li>
+                                        <li class="form__option">Vung Tau</li>
+                                        <li class="form__option">Bac Ninh</li>
+                                        <li class="form__option">Thanh Hoa</li>
+                                        <li class="form__option">Hai Duong</li>
+                                        <li class="form__option">Nam Dinh</li>
+                                        <li class="form__option">Thai Binh</li>
+                                        <li class="form__option">Quy Nhon</li>
+                                        <li class="form__option">Buon Ma Thuot</li>
+                                        <li class="form__option">Bien Hoa</li>
+                                        <li class="form__option">Long Xuyen</li>
+                                        <li class="form__option">Rach Gia</li>
+                                        <li class="form__option">My Tho</li>
+                                        <li class="form__option">Phan Thiet</li>
+                                    </ul>
+                                </div>
                             </div>
                             <p class="form__error">Phone must be at least 11 characters</p>
                         </div>
