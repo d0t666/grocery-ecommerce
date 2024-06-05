@@ -42,7 +42,7 @@
     &__title {
         font-size: 2.2rem;
         font-weight: 700;
-        line-height: 145.455%; /*  */
+        line-height: 145.455%;
         color: var(--cate-item-title-color);
         @include abstracts.screen(md) {
             font-size: 1.8rem;

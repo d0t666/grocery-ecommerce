@@ -263,12 +263,18 @@ $error-color: #ed4337;
         display: block;
         font-size: 2.2rem;
         font-weight: 500;
-        line-height: 145.455%; /*  */
+        line-height: 145.455%;
         &--small {
             margin-bottom: 10px;
             font-size: 1.4rem;
             font-weight: 500;
-            line-height: 142.857%; /*  */
+            line-height: 142.857%;
+        }
+        &--medium {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
         }
     }
     &__select-wrap {
@@ -290,7 +296,7 @@ $error-color: #ed4337;
 
         font-size: 1.4rem;
         font-weight: 500;
-        line-height: 142.857%; /*  */
+        line-height: 142.857%;
         cursor: pointer;
         @include abstracts.screen(xl) {
             flex: 1;
